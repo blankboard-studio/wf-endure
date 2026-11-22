@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "webflow-endure-redesign": {
+      "type": "http",
+      "url": "https://mcp.webflow.com/mcp"
+    }
+  }
+}

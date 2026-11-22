@@ -1,0 +1,13 @@
+{
+  "prototypeUrl": "http://127.0.0.1:5217",
+  "stagingUrl": "https://endure-redesign.webflow.io",
+  "repoDir": ".",
+  "bundlePattern": "blankboard-studio\\.github\\.io/wf-endure/(index\\.js|styles\\.css)",
+  "widths": [
+    [1440, 900],
+    [820, 1180],
+    [667, 375],
+    [390, 844]
+  ],
+  "pages": ["/"]
+}
