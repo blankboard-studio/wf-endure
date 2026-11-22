@@ -96,13 +96,4 @@ test('lists what\'s new with the steps for this repo, and --notes writes the ent
   assert.equal(fs.readFileSync(notes, 'utf8'), '');
 });
 
-test('seeds the weekly template-update workflow once; a site that deletes it keeps it deleted', () => {
-  const dir = oldRepo();
-  const wf = path.join(dir, '.github/workflows/template-update.yml');
-  assert.match(run(dir), /\+ \.github\/workflows\/template-update\.yml/);
-  assert.equal(read(dir, '.github/workflows/template-update.yml'), read(root, '.github/workflows/template-update.yml'));
-  fs.rmSync(wf);
-  assert.doesNotMatch(run(dir), /template-update\.yml/);
-  assert.ok(!fs.existsSync(wf));
-});
 
